@@ -1,0 +1,109 @@
+.detail-container {
+    display: flex;
+    flex-direction: row; /* side-by-side layout */
+    align-items: flex-start;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    /* padding: 20px; */
+    padding-top: 50px;
+
+    gap: 80px; /* space between the panels */
+}
+
+/* Panel for image */
+.product-image-panel {
+    flex: 2; /* Takes double the space compared to the right panel */
+    box-sizing: border-box; /* Include padding and border in the element's total width */
+    padding-right: 20px; /* padding between the panels */
+}
+
+.product-image-panel img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Panel for product details */
+.right-panel {
+    flex: 1;
+    max-width: 35%;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    text-align: left;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+/* Details formatting */
+.product-details dt {
+  font-weight: bold;
+  color: #333;
+}
+
+.product-details dd {
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
+/* Special styling for price to make it stand out */
+.product-price strong {
+  font-size: 1.5em;
+  color: #d32f2f;
+}
+
+/* Buttons */
+.btn {
+  padding: 10px 15px;
+  margin: 0 10px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.add-to-cart-button {
+    margin-bottom: 20px; /* Adds space below the button */
+}
+
+.btn-primary {
+  background-color: #d32f2f;
+  color: white;
+}
+
+.btn-secondary {
+  background-color: gray;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #b71c1c;
+}
+
+.btn-outline-primary {
+  background-color: transparent;
+  color: #d32f2f;
+  border: 1px solid #d32f2f;
+}
+
+.btn-outline-primary:hover {
+  background-color: #d32f2f;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .detail-container {
+    flex-direction: column;
+  }
+
+  .product-image-panel,
+  .right-panel {
+    max-width: 100%;
+  }
+
+  .product-image-panel {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}

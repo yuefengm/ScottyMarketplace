@@ -1,0 +1,87 @@
+.sell-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.sell-header {
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+.part-header {
+  font-size: 28px; /* Example size, adjust as needed */
+  color: #2c3e50; /* A darker shade for better readability */
+  margin-bottom: 20px; /* Spacing below the header */
+  padding-bottom: 10px; /* Spacing within the header */
+  border-bottom: 2px solid grey; /* A solid line to highlight the section */
+  text-align: left; /* Align text to the left */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .your-selling-history-header {
+    font-size: 22px; /* Smaller font size for mobile devices */
+    padding-left: 15px; /* Extra padding to avoid text touching the screen edge */
+  }
+}
+
+.add-product-button {
+  background-color: #d32f2f; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.add-product-button:hover {
+  background-color: #b71c1c;
+}
+
+.sell-products-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: flex-start;
+}
+
+.product-item {
+  border: 1px solid #eaeaea;
+  padding: 10px;
+  border-radius: 5px;
+  width: calc(33.333% - 20px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.product-item:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.product-view {
+  text-align: center;
+}
+
+.product-name {
+  font-size: 18px;
+  color: #333;
+}
+
+.product-description {
+  font-size: 14px;
+  color: #666;
+}
+
+.product-price {
+  font-size: 16px;
+  color: #111;
+  font-weight: bold;
+}

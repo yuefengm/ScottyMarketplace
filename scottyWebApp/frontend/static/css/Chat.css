@@ -1,0 +1,127 @@
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    height: 89vh;
+    background-color: #E5E5E5;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.chat-header {
+    display: flex;
+    justify-content: center; /* Center everything horizontally */
+    align-items: center; /* Align items vertically */
+    background-color: white;
+    padding: 16px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+    flex-shrink: 0;
+    position: relative; /* Allow absolute positioning relative to this container */
+}
+
+.chat-page-link-to {
+    position: absolute;
+    left: 16px; /* Or how much you want to offset from the left side */
+    top: 50%;
+    transform: translateY(-50%); /* Center vertically */
+}
+
+.chat-page-link-to img {
+    height: 35px; /* Adjust the height to fit your header */
+    width: auto; /* Keeps the aspect ratio of the image */
+}
+
+.chat-user {
+    display: flex;
+    justify-content: center; /* Center name horizontally in the available space */
+    align-items: center; /* Center name vertically */
+}
+
+
+.message-display {
+    flex-grow: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    background-color: #F7F7F7;
+    max-height: 80vh;
+}
+
+.message {
+    margin-bottom: 16px;
+    padding: 10px;
+    background-color: #FFFFFF;
+    border-radius: 16px;
+    max-width: 60%;
+    align-self: flex-start;
+}
+
+.message.sent {
+    background-color: #DCF8C6;
+    align-self: flex-end;
+}
+
+.message-content {
+    color: #333;
+}
+
+.message-timestamp {
+    text-align: right;
+    font-size: 12px;
+    color: #999;
+}
+
+.message-input {
+    display: flex;
+    padding: 20px 40px;
+    background-color: white;
+    flex-shrink: 0;
+}
+
+.message-input textarea {
+    flex-grow: 1;
+    padding: 8px;
+    margin-right: 8px;
+    border: 1px solid #ccc;
+    border-radius: 16px;
+    resize: none;
+    outline: none;
+}
+
+.message-input button {
+    padding: 8px 16px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+.message-input button:hover {
+    background-color: #f44336;
+}
+
+.chat-list {
+    display: flex;
+    margin: 40px;
+    flex-direction: column;
+}
+
+.chat-preview {
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+}
+
+.chat-preview:hover {
+    background-color: #f0f0f0;
+}
+
+.chat-info h3 {
+    margin: 0;
+    color: #333;
+}
+
+.last-message {
+    font-size: 0.9em;
+    color: #666;
+}

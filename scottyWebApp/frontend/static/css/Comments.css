@@ -1,0 +1,148 @@
+.comment {
+  list-style-type: none;
+  border-bottom: 1px solid #eee;
+  padding: 15px 10px;
+  margin-bottom: 15px;
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.comment:hover {
+  background-color: #f9f9f9; /* Slight highlight on hover */
+}
+
+.comment-username {
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #333; /* Darker text for better readability */
+}
+
+.subcomment-username {
+  font-weight: bold;
+  font-size: 1.0em;
+  color: #333; /* Darker text for better readability */
+}
+
+.comment-timestamp {
+  font-size: 0.9em; /* Slightly larger for readability */
+  color: #999;
+  margin-top: 10px;
+}
+
+.comment-text {
+  margin-top: 10px; /* More space above the comment text */
+  line-height: 1.6; /* More readable line height */
+  color: #333; /* Darker text for better readability */
+}
+
+.comment-content {
+  display: flex;
+  align-items: start; 
+  flex-direction: column;
+
+}
+
+.comment-list-panel {
+  background: #fff;
+  margin: 20px;
+  margin-left: 10%;
+  margin-right: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch; /* Stretch aligns items to fill the width */
+  padding: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05); /* Softer shadow for a subtle depth */
+}
+
+li.comment-panel {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+li.sub-comment-panel {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px; /* More space for nesting to distinguish sub-comments */
+  width: 80%;
+  border-left: 2px solid #eee; /* Line to connect sub-comments to the parent */
+  padding-left: 15px; /* Space before sub-comment text starts */
+}
+
+/* Add a subtle inset shadow to the top of a new comment block to indicate stacking */
+/* Improve the visual hierarchy with a new reply button that stands out */
+.reply-button {
+  background-color: #4CAF50; /* A green color for the reply button */
+  color: white;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 0.8em;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px; /* Add space above the reply button */
+  transition: background-color 0.3s;
+}
+
+
+.reply-button:hover {
+  background-color: #45a049; /* Darker green on hover for the button */
+}
+
+/* General styling for the comment form */
+.comment-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 1em auto;
+  padding: 1em;
+  background: #f8f8f8;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for labels within the comment form */
+.comment-form label {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.5em;
+}
+
+/* Styling for the textarea within the comment form */
+.comment-form textarea {
+  padding: 0.5em;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 1em;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+/* Styling for the submit button within the comment form */
+.comment-button {
+  padding: 0.5em 1em;
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  background-color: #f44336;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover and active states for the button */
+.comment-button:hover,
+.comment-button:active {
+  background-color: #f44336;
+}
+
+/* Placeholder styling within the comment form */
+.comment-form textarea::placeholder {
+  color: #999;
+}
+

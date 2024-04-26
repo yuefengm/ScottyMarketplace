@@ -1,0 +1,170 @@
+/* Basic reset for styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+body, html {
+width: 100%;
+height: 100%;
+font-family: 'Arial', sans-serif;
+}
+
+/* Header Styles */
+header {
+background-color: #fff; /* Change this to match your header background */
+padding: 1rem 2rem;
+box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.logo {
+font-size: 1.5rem;
+font-weight: bold;
+color: #333; /* Change this to match your logo color */
+}
+
+.nav-list {
+list-style: none;
+display: flex;
+}
+
+.nav-list li {
+padding: 0 1rem;
+}
+
+.nav-list li a {
+text-decoration: none;
+color: #333; /* Change this to match your link color */
+font-size: 1rem;
+}
+
+.login-register a {
+text-decoration: none;
+color: #007BFF; /* A blue color for login link, change as needed */
+font-weight: bold;
+}
+
+/* Main Content Styles */
+main {
+
+color: white; /* White text color */
+text-align: center; /* Centered text */
+padding: 4rem 1rem; /* Padding around the content */
+height: 700px;
+background: url('../images/background-image.png') center/cover no-repeat;
+}
+
+.hero {
+max-width: 1200px; /* Max width for content */
+margin: 0 auto; /* Center the content block */
+}
+
+.hero h1 {
+font-size: 2.5rem;
+margin-bottom: 1rem;
+}
+
+.hero p {
+font-size: 1.5rem;
+margin-bottom: 2rem;
+}
+/* Responsive Design - Example for adjusting text size on smaller screens */
+@media (max-width: 768px) {
+.hero h1 {
+    font-size: 2rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+}
+
+
+.login-register-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+  
+.login-register-container {
+    width: 400px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin-right: 20px;
+}
+  
+.input-group {
+    margin-bottom: 15px;
+}
+  
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+  
+.input-group input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+}
+  
+.remember-me {
+    margin-bottom: 15px;
+}
+  
+.login-register-button {
+    width: 100%;
+    padding: 10px;
+    background: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+  
+.forgot-reminder {
+    display: flex;
+    justify-content: space-between;
+    color: lightgrey;
+    margin-top: 10px;
+}
+
+.login-register-reminder {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+  
+.loginregister-reminder a {
+    color: blue;
+    text-decoration: none;
+}
+  
+.logo-container {
+    color: white; /* White text color */
+    text-align: center; /* Centered text */
+    padding: 4rem 1rem; /* Padding around the content */
+    width: 40%;
+    height: 600px;
+    background: url('../images/cmu-logo.png') center/contain no-repeat;
+}
+
+.error-message {
+    color: red;
+    margin-bottom: 20px;
+}
+
+.link-to img {
+    margin-right: 40px;
+    height: 20px; /* Adjust the height to fit your header */
+    width: auto; /* Keeps the aspect ratio of the image */
+}
+

@@ -1,0 +1,38 @@
+.breadcrumb {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #d32f2f;
+  color: white;
+  padding: 20px 20px;
+}
+.breadcrumb .big-text {
+  padding-left: 50px;
+  font-weight: bold;
+  font-size: 18px;
+  color: black;
+}
+
+.breadcrumb a {
+  color: white;
+  text-decoration: underline;
+  font-size: 14px;
+}
+
+.breadcrumb .divider {
+  color: black;
+  margin: 0 10px;
+  font-size: 14px;
+}
+
+.breadcrumb .current {
+  font-weight: bold;
+  font-size: 14px;
+  color: black;
+}
+
+.breadcrumb .links-container {
+  display: flex;
+  align-items: center;
+  padding-right: 50px;
+}
